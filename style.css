@@ -1,0 +1,758 @@
+body {
+    margin: 0;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo_outdoor {
+	animation: rotateOutdoor infinite 30s linear;
+	position: relative;
+	top: 32%;
+	left: 14%;
+	z-index: 2;
+}
+#logo_indoor {
+	animation: rotateIndoor infinite 30s linear;
+	position: absolute;
+	top: 14%;
+	left: 14%;
+	z-index: 2;
+}
+
+#picture_background {
+    width: 90.5%;
+    margin-left: auto;
+}
+
+@keyframes rotateIndoor {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateOutdoor {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+#bloc_header,
+#bloc_header_logo {
+	display: flex;
+}
+
+#menu {
+list-style-type: none;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+margin: 0px;
+padding: 0px 12px;
+border-right: 2px solid white;
+text-align: center;
+background-color: #1c2b32;
+font-family: 'Lora', serif;
+position: relative;
+z-index: 2;
+}
+
+#bloc_menu {
+	position: absolute;
+	display: flex;
+	min-height: 100%;
+}
+.menu_inside {
+	color: white;
+border-bottom: 2px solid white;
+padding-bottom: 20px;
+	font-size: 16px;
+font-weight: bold;
+	
+}
+#bloc_logo_title {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+#title_homepage {
+	position: relative;
+	top: 35%;
+	left: 17%;
+	color: white;
+	text-align: center;
+	z-index: 2;
+font-family: 'Cormorant Garamond', serif;
+	font-size: 46px;
+}
+#bloc_text {
+	position: relative;
+	top: 32%;
+	left: 12%;
+	font-size: 24px;
+	text-align: center;
+	color: transparent;
+	z-index: 2;
+	font-family: 'Lora', serif;
+	width: 40%;
+}
+#bloc_image {
+	position: absolute;
+	z-index: 2;
+	display: flex;
+	max-height: 890px
+}
+/*---- ANIMATION---- */
+
+#first_text_title {
+	animation: first 1s cubic-bezier(.46,1.29,.83,1);
+	animation-delay: 1s;
+	color: transparent;
+	animation-fill-mode: forwards;
+}
+
+#second_text_title {
+	animation: second 1s cubic-bezier(.46,1.29,.83,1);
+	animation-delay: 1.5s;
+	color: transparent;
+	animation-fill-mode: forwards;
+}
+
+#third_text_title {
+	animation: third 1s cubic-bezier(.46,1.29,.83,1);
+	animation-delay: 2s;
+	color: transparent;
+	animation-fill-mode: forwards;
+}
+
+@keyframes first {
+	0% {
+		position: relative;
+		top: -400px;
+	} 100% {
+		position: relative;
+		top: 0px;
+		color: white;
+	}
+}
+@keyframes second {
+	0% {
+		position: relative;
+		left: -1400px;
+	} 100% {
+		position: relative;
+		left: 0px;
+		color: white;
+	}
+}
+
+@keyframes third {
+	0% {
+		position: relative;
+		right: -1400px;
+	} 100% {
+		position: relative;
+		right: 0px;
+		color: white;
+	}
+}
+
+#letter1 {
+	animation: color 0.3s;
+	animation-delay: 3s/*temps de chargement*/;
+	animation-fill-mode: forwards;
+}
+#letter2 {
+	animation: color 0.3s;
+	animation-delay: 3.1s;
+		animation-fill-mode: forwards;
+}
+#letter3 {
+	animation: color 0.3s;
+	animation-delay: 3.2s;
+		animation-fill-mode: forwards;
+}
+#letter4 {
+	animation: color 0.3s;
+	animation-delay: 3.3s;
+		animation-fill-mode: forwards;
+}
+#letter5 {
+	animation: color 0.3s;
+	animation-delay: 3.4s;
+		animation-fill-mode: forwards;
+}
+#letter6 {
+	animation: color 0.3s;
+	animation-delay: 3.5s;
+		animation-fill-mode: forwards;
+}
+#letter7 {
+	animation: color 0.3s;
+	animation-delay: 3.6s;
+		animation-fill-mode: forwards;
+}
+#letter8 {
+	animation: color 0.3s;
+	animation-delay: 3.7s;
+		animation-fill-mode: forwards;
+}
+#letter9 {
+	animation: color 0.3s;
+	animation-delay: 3.8s;
+		animation-fill-mode: forwards;
+}
+#letter10 {
+	animation: color 0.3s;
+	animation-delay: 3.9s;
+		animation-fill-mode: forwards;
+}
+#letter11 {
+	animation: color 0.3s;
+	animation-delay: 4s;
+		animation-fill-mode: forwards;
+}
+#letter12 {
+	animation: color 0.3s;
+	animation-delay: 4.1s;
+		animation-fill-mode: forwards;
+}
+#letter13 {
+	animation: color 0.3s;
+	animation-delay: 4.2s;
+		animation-fill-mode: forwards;
+}
+#letter14 {
+	animation: color 0.3s;
+	animation-delay: 4.3s;
+		animation-fill-mode: forwards;
+}
+#letter15 {
+	animation: color 0.3s;
+	animation-delay: 4.4s;
+		animation-fill-mode: forwards;
+}
+#letter16 {
+	animation: color 0.3s;
+	animation-delay: 4.5s;
+		animation-fill-mode: forwards;
+}
+#letter17 {
+	animation: color 0.3s;
+	animation-delay: 4.6s;
+		animation-fill-mode: forwards;
+}
+#letter18 {
+	animation: color 0.3s;
+	animation-delay: 4.7s;
+		animation-fill-mode: forwards;
+}
+#letter19 {
+	animation: color 0.3s;
+	animation-delay: 4.8s;
+		animation-fill-mode: forwards;
+}
+#letter20 {
+	animation: color 0.3s;
+	animation-delay: 4.9s;
+		animation-fill-mode: forwards;
+}
+#letter21 {
+	animation: color 0.3s;
+	animation-delay: 5s;
+		animation-fill-mode: forwards;
+}
+#letter22 {
+	animation: color 0.3s;
+	animation-delay: 5.1s;
+		animation-fill-mode: forwards;
+}
+#letter23 {
+	animation: color 0.3s;
+	animation-delay: 5.2s;
+		animation-fill-mode: forwards;
+}
+#letter24 {
+	animation: color 0.3s;
+	animation-delay: 5.3s;
+		animation-fill-mode: forwards;
+}
+#letter25 {
+	animation: color 0.3s;
+	animation-delay: 5.4s;
+		animation-fill-mode: forwards;
+}
+#letter26 {
+	animation: color 0.3s;
+	animation-delay: 5.5s;
+		animation-fill-mode: forwards;
+}
+#letter27 {
+	animation: color 0.3s;
+	animation-delay: 5.6s;
+		animation-fill-mode: forwards;
+}
+#letter28 {
+	animation: color 0.3s;
+	animation-delay: 5.7s;
+		animation-fill-mode: forwards;
+}
+#letter29 {
+	animation: color 0.3s;
+	animation-delay: 5.8s;
+		animation-fill-mode: forwards;
+}
+#letter30 {
+	animation: color 0.3s;
+	animation-delay: 5.9s;
+		animation-fill-mode: forwards;
+}
+#letter31 {
+	animation: color 0.3s;
+	animation-delay: 6s;
+		animation-fill-mode: forwards;
+}
+#letter32 {
+	animation: color 0.3s;
+	animation-delay: 6.1s;
+		animation-fill-mode: forwards;
+}
+#letter33 {
+	animation: color 0.3s;
+	animation-delay: 6.2s;
+		animation-fill-mode: forwards;
+}
+#letter34 {
+	animation: color 0.3s;
+	animation-delay: 6.3s;
+		animation-fill-mode: forwards;
+}
+#letter35 {
+	animation: color 0.3s;
+	animation-delay: 6.4s;
+		animation-fill-mode: forwards;
+}
+#letter36 {
+	animation: color 0.3s;
+	animation-delay: 6.5s;
+		animation-fill-mode: forwards;
+}
+#letter37 {
+	animation: color 0.3s;
+	animation-delay: 6.6s;
+		animation-fill-mode: forwards;
+}
+#letter38 {
+	animation: color 0.3s;
+	animation-delay: 6.7s;
+		animation-fill-mode: forwards;
+}
+#letter39 {
+	animation: color 0.3s;
+	animation-delay: 6.8s;
+		animation-fill-mode: forwards;
+}
+#letter40 {
+	animation: color 0.3s;
+	animation-delay: 6.9s;
+		animation-fill-mode: forwards;
+}
+#letter41 {
+	animation: color 0.3s;
+	animation-delay: 7s;
+		animation-fill-mode: forwards;
+}
+#letter42 {
+	animation: color 0.3s;
+	animation-delay: 7.1s;
+		animation-fill-mode: forwards;
+}
+#letter43 {
+	animation: color 0.3s;
+	animation-delay: 7.2s;
+		animation-fill-mode: forwards;
+}
+#letter44 {
+	animation: color 0.3s;
+	animation-delay: 7.3s;
+		animation-fill-mode: forwards;
+}
+#letter45 {
+	animation: color 0.3s;
+	animation-delay: 7.4s;
+		animation-fill-mode: forwards;
+}
+#letter46 {
+	animation: color 0.3s;
+	animation-delay: 7.5s;
+		animation-fill-mode: forwards;
+}
+#letter47 {
+	animation: color 0.3s;
+	animation-delay: 7.6s;
+		animation-fill-mode: forwards;
+}
+#letter48 {
+	animation: color 0.3s;
+	animation-delay: 7.7s;
+		animation-fill-mode: forwards;
+}
+#letter49 {
+	animation: color 0.3s;
+	animation-delay: 7.8s;
+		animation-fill-mode: forwards;
+}
+#letter50 {
+	animation: color 0.3s;
+	animation-delay: 7.9s;
+		animation-fill-mode: forwards;
+}
+#letter51 {
+	animation: color 0.3s;
+	animation-delay: 8s;
+		animation-fill-mode: forwards;
+}
+#letter52 {
+	animation: color 0.3s;
+	animation-delay: 8.1s;
+		animation-fill-mode: forwards;
+}
+#letter53 {
+	animation: color 0.3s;
+	animation-delay: 8.2s;
+		animation-fill-mode: forwards;
+}
+#letter54 {
+	animation: color 0.3s;
+	animation-delay: 8.3s;
+		animation-fill-mode: forwards;
+}
+#letter55 {
+	animation: color 0.3s;
+	animation-delay: 8.4s;
+		animation-fill-mode: forwards;
+}
+#letter56 {
+	animation: color 0.3s;
+	animation-delay: 8.5s;
+		animation-fill-mode: forwards;
+}
+#letter57 {
+	animation: color 0.3s;
+	animation-delay: 8.6s;
+		animation-fill-mode: forwards;
+}
+#letter58 {
+	animation: color 0.3s;
+	animation-delay: 8.7s;
+		animation-fill-mode: forwards;
+}
+#letter59 {
+	animation: color 0.3s;
+	animation-delay: 8.8s;
+		animation-fill-mode: forwards;
+}
+#letter60 {
+	animation: color 0.3s;
+	animation-delay: 8.9s;
+		animation-fill-mode: forwards;
+}
+#letter61 {
+	animation: color 0.3s;
+	animation-delay: 9s;
+		animation-fill-mode: forwards;
+}
+#letter62 {
+	animation: color 0.3s;
+	animation-delay: 9.1s;
+		animation-fill-mode: forwards;
+}
+#letter63 {
+	animation: color 0.3s;
+	animation-delay: 9.2s;
+		animation-fill-mode: forwards;
+}
+#letter64 {
+	animation: color 0.3s;
+	animation-delay: 9.3s;
+		animation-fill-mode: forwards;
+}
+#letter65 {
+	animation: color 0.3s;
+	animation-delay: 9.4s;
+		animation-fill-mode: forwards;
+}
+#letter66 {
+	animation: color 0.3s;
+	animation-delay: 9.5s;
+		animation-fill-mode: forwards;
+}
+#letter67 {
+	animation: color 0.3s;
+	animation-delay: 9.6s;
+		animation-fill-mode: forwards;
+}
+#letter68 {
+	animation: color 0.3s;
+	animation-delay: 9.7s;
+		animation-fill-mode: forwards;
+}
+#letter69 {
+	animation: color 0.3s;
+	animation-delay: 9.8s;
+		animation-fill-mode: forwards;
+}
+#letter70 {
+	animation: color 0.3s;
+	animation-delay: 9.9s;
+		animation-fill-mode: forwards;
+}
+#letter71 {
+	animation: color 0.3s;
+	animation-delay: 10s;
+		animation-fill-mode: forwards;
+}
+#letter72 {
+	animation: color 0.3s;
+	animation-delay: 10.1s;
+		animation-fill-mode: forwards;
+}
+#letter73 {
+	animation: color 0.3s;
+	animation-delay: 10.2s;
+		animation-fill-mode: forwards;
+}
+#letter74 {
+	animation: color 0.3s;
+	animation-delay: 10.3s;
+		animation-fill-mode: forwards;
+}
+#letter75 {
+	animation: color 0.3s;
+	animation-delay: 10.4s;
+		animation-fill-mode: forwards;
+}
+#letter76 {
+	animation: color 0.3s;
+	animation-delay: 10.5s;
+		animation-fill-mode: forwards;
+}
+#letter77 {
+	animation: color 0.3s;
+	animation-delay: 10.6s;
+		animation-fill-mode: forwards;
+}
+#letter78 {
+	animation: color 0.3s;
+	animation-delay: 10.6s;
+		animation-fill-mode: forwards;
+}
+#letter79 {
+	animation: color 0.3s;
+	animation-delay: 10.7s;
+		animation-fill-mode: forwards;
+}
+#letter80 {
+	animation: color 0.3s;
+	animation-delay: 10.8s;
+		animation-fill-mode: forwards;
+}
+#letter81 {
+	animation: color 0.3s;
+	animation-delay: 10.9s;
+		animation-fill-mode: forwards;
+}
+#letter82 {
+	animation: color 0.3s;
+	animation-delay: 11s;
+		animation-fill-mode: forwards;
+}
+#letter83 {
+	animation: color 0.3s;
+	animation-delay: 11.1s;
+		animation-fill-mode: forwards;
+}
+#letter84 {
+	animation: color 0.3s;
+	animation-delay: 11.2s;
+		animation-fill-mode: forwards;
+}
+#letter85 {
+	animation: color 0.3s;
+	animation-delay: 11.3s;
+		animation-fill-mode: forwards;
+}
+#letter86 {
+	animation: color 0.3s;
+	animation-delay: 11.4s;
+		animation-fill-mode: forwards;
+}
+#letter87 {
+	animation: color 0.3s;
+	animation-delay: 11.5s;
+		animation-fill-mode: forwards;
+}
+#letter88 {
+	animation: color 0.3s;
+	animation-delay: 11.6s;
+		animation-fill-mode: forwards;
+}
+#letter89 {
+	animation: color 0.3s;
+	animation-delay: 11.7s;
+		animation-fill-mode: forwards;
+}
+#letter90 {
+	animation: color 0.3s;
+	animation-delay: 11.8s;
+		animation-fill-mode: forwards;
+}
+#letter91 {
+	animation: color 0.3s;
+	animation-delay: 11.9s;
+		animation-fill-mode: forwards;
+}
+#letter92 {
+	animation: color 0.3s;
+	animation-delay: 12s;
+		animation-fill-mode: forwards;
+}
+#letter93 {
+	animation: color 0.3s;
+	animation-delay: 12.1s;
+		animation-fill-mode: forwards;
+}
+#letter94 {
+	animation: color 0.3s;
+	animation-delay: 12.2s;
+		animation-fill-mode: forwards;
+}
+#letter95 {
+	animation: color 0.3s;
+	animation-delay: 12.3s;
+		animation-fill-mode: forwards;
+}
+#letter96 {
+	animation: color 0.3s;
+	animation-delay: 12.4s;
+		animation-fill-mode: forwards;
+}
+#letter97 {
+	animation: color 0.3s;
+	animation-delay: 12.5s;
+		animation-fill-mode: forwards;
+}
+#letter98 {
+	animation: color 0.3s;
+	animation-delay: 12.6s;
+		animation-fill-mode: forwards;
+}
+#letter99 {
+	animation: color 0.3s;
+	animation-delay: 12.7s;
+		animation-fill-mode: forwards;
+}
+#letter100 {
+	animation: color 0.3s;
+	animation-delay: 12.8s;
+		animation-fill-mode: forwards;
+}
+#letter101 {
+	animation: color 0.3s;
+	animation-delay: 12.9s;
+		animation-fill-mode: forwards;
+}
+#letter102 {
+	animation: color 0.3s;
+	animation-delay: 13s;
+		animation-fill-mode: forwards;
+}
+#letter103 {
+	animation: color 0.3s;
+	animation-delay: 13.1s;
+		animation-fill-mode: forwards;
+}
+#letter104 {
+	animation: color 0.3s;
+	animation-delay: 13.2s;
+		animation-fill-mode: forwards;
+}
+#letter105 {
+	animation: color 0.3s;
+	animation-delay: 13.3s;
+		animation-fill-mode: forwards;
+}
+#letter106 {
+	animation: color 0.3s;
+	animation-delay: 13.4s;
+		animation-fill-mode: forwards;
+}
+#letter107 {
+	animation: color 0.3s;
+	animation-delay: 13.5s;
+		animation-fill-mode: forwards;
+}
+#letter108 {
+	animation: color 0.3s;
+	animation-delay: 13.6s;
+		animation-fill-mode: forwards;
+}
+#letter109 {
+	animation: color 0.3s;
+	animation-delay: 13.7s;
+		animation-fill-mode: forwards;
+}
+#letter110 {
+	animation: color 0.3s;
+	animation-delay: 13.8s;
+		animation-fill-mode: forwards;
+}
+#letter111 {
+	animation: color 0.3s;
+	animation-delay: 13.9s;
+		animation-fill-mode: forwards;
+}
+#letter112 {
+	animation: color 0.3s;
+	animation-delay: 14s;
+		animation-fill-mode: forwards;
+}
+#letter113 {
+	animation: color 0.3s;
+	animation-delay: 14.1s;
+		animation-fill-mode: forwards;
+}
+#letter114 {
+	animation: color 0.3s;
+	animation-delay: 14.2s;
+		animation-fill-mode: forwards;
+}
+#letter115 {
+	animation: color 0.3s;
+	animation-delay: 14.3s;
+		animation-fill-mode: forwards;
+}
+#letter116 {
+	animation: color 0.3s;
+	animation-delay: 14.4s;
+		animation-fill-mode: forwards;
+}
+#letter117 {
+	animation: color 0.3s;
+	animation-delay: 14.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes color {
+	0% {
+		color: transparent;
+	} 100% {
+		color: white;
+	}
+}
