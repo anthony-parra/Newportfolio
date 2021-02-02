@@ -1,3 +1,5 @@
+@import "./Mixins/mixins.scss";
+
 body {
     margin: 0;
     width: 100%;
@@ -13,13 +15,15 @@ a {
 	top: 32%;
 	left: 14%;
 	z-index: 2;
+	width: 250px;
 }
 #logo_indoor {
 	animation: rotateIndoor infinite 30s linear;
 	position: absolute;
-	top: 14%;
+	top: 9%;
 	left: 14%;
 	z-index: 2;
+	width: 252px;
 }
 
 #picture_background {
@@ -111,72 +115,31 @@ font-family: 'Cormorant Garamond', serif;
 /*---- ANIMATION---- */
 
 #first_text_title {
-	animation: first 1s cubic-bezier(.46,1.29,.83,1);
+	@include title_text_first;
 	animation-delay: 1s;
-	color: transparent;
-	animation-fill-mode: forwards;
 }
 
 #second_text_title {
-	animation: second 1s cubic-bezier(.46,1.29,.83,1);
+	@include title_text_second;
 	animation-delay: 1.5s;
-	color: transparent;
-	animation-fill-mode: forwards;
 }
 
 #third_text_title {
-	animation: third 1s cubic-bezier(.46,1.29,.83,1);
+	@include title_text_third;
 	animation-delay: 2s;
-	color: transparent;
-	animation-fill-mode: forwards;
-}
-
-@keyframes first {
-	0% {
-		position: relative;
-		top: -400px;
-	} 100% {
-		position: relative;
-		top: 0px;
-		color: white;
-	}
-}
-@keyframes second {
-	0% {
-		position: relative;
-		left: -1400px;
-	} 100% {
-		position: relative;
-		left: 0px;
-		color: white;
-	}
-}
-
-@keyframes third {
-	0% {
-		position: relative;
-		right: -1400px;
-	} 100% {
-		position: relative;
-		right: 0px;
-		color: white;
-	}
 }
 
 #letter1 {
-	animation: color 0.3s;
+	@include letter;
 	animation-delay: 3s/*temps de chargement*/;
-	animation-fill-mode: forwards;
 }
 #letter2 {
-	animation: color 0.3s;
+	@include letter;
 	animation-delay: 3.1s;
-		animation-fill-mode: forwards;
 }
 #letter3 {
-	animation: color 0.3s;
+	@include letter;
 	animation-delay: 3.2s;
-		animation-fill-mode: forwards;
 }
 #letter4 {
 	animation: color 0.3s;
@@ -747,12 +710,4 @@ font-family: 'Cormorant Garamond', serif;
 	animation: color 0.3s;
 	animation-delay: 14.5s;
 	animation-fill-mode: forwards;
-}
-
-@keyframes color {
-	0% {
-		color: transparent;
-	} 100% {
-		color: white;
-	}
 }

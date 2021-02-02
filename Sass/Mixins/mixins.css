@@ -1,0 +1,90 @@
+@-webkit-keyframes first {
+  0% {
+    position: relative;
+    top: -400px;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+    color: white;
+  }
+}
+
+@keyframes first {
+  0% {
+    position: relative;
+    top: -400px;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+    color: white;
+  }
+}
+
+@-webkit-keyframes second {
+  0% {
+    position: relative;
+    left: -1400px;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+    color: white;
+  }
+}
+
+@keyframes second {
+  0% {
+    position: relative;
+    left: -1400px;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+    color: white;
+  }
+}
+
+@-webkit-keyframes third {
+  0% {
+    position: relative;
+    right: -1400px;
+  }
+  100% {
+    position: relative;
+    right: 0px;
+    color: white;
+  }
+}
+
+@keyframes third {
+  0% {
+    position: relative;
+    right: -1400px;
+  }
+  100% {
+    position: relative;
+    right: 0px;
+    color: white;
+  }
+}
+
+@-webkit-keyframes color {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes color {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: white;
+  }
+}
+/*# sourceMappingURL=mixins.css.map */

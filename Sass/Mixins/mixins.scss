@@ -1,0 +1,60 @@
+@mixin title_text_first {
+    animation: first 1s cubic-bezier(.46,1.29,.83,1);
+    color: transparent;
+	animation-fill-mode: forwards;
+}
+@mixin title_text_second {
+    animation: second 1s cubic-bezier(.46,1.29,.83,1);
+    color: transparent;
+	animation-fill-mode: forwards;
+}
+@mixin title_text_third {
+    animation: third 1s cubic-bezier(.46,1.29,.83,1);
+    color: transparent;
+	animation-fill-mode: forwards;
+}
+
+@keyframes first {
+	0% {
+		position: relative;
+		top: -400px;
+	} 100% {
+		position: relative;
+		top: 0px;
+		color: white;
+	}
+}
+@keyframes second {
+	0% {
+		position: relative;
+		left: -1400px;
+	} 100% {
+		position: relative;
+		left: 0px;
+		color: white;
+	}
+}
+
+@keyframes third {
+	0% {
+		position: relative;
+		right: -1400px;
+	} 100% {
+		position: relative;
+		right: 0px;
+		color: white;
+	}
+}
+
+@mixin letter {
+    animation: color 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes color {
+	0% {
+		color: transparent;
+	} 100% {
+		color: white;
+	}
+}
