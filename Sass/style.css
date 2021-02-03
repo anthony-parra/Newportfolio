@@ -88,40 +88,6 @@
   }
 }
 
-body {
-  margin: 0;
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-#logo_outdoor {
-  -webkit-animation: rotateOutdoor infinite 30s linear;
-          animation: rotateOutdoor infinite 30s linear;
-  position: relative;
-  top: 32%;
-  left: 14%;
-  z-index: 2;
-  width: 250px;
-}
-
-#logo_indoor {
-  -webkit-animation: rotateIndoor infinite 30s linear;
-          animation: rotateIndoor infinite 30s linear;
-  position: absolute;
-  top: 9%;
-  left: 14%;
-  z-index: 2;
-  width: 252px;
-}
-
-#picture_background {
-  width: 90.5%;
-  margin-left: auto;
-}
-
 @-webkit-keyframes rotateIndoor {
   from {
     -webkit-transform: rotate(0deg);
@@ -164,6 +130,62 @@ a {
     -webkit-transform: rotate(-360deg);
             transform: rotate(-360deg);
   }
+}
+
+/* -------- REGLAGES GENERAUX ----------- */
+body {
+  margin: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------- INDEX.HTML ----------- */
+#logo_outdoor {
+  -webkit-animation: rotateOutdoor infinite 30s linear;
+          animation: rotateOutdoor infinite 30s linear;
+  position: relative;
+  top: 32%;
+  left: 14%;
+  z-index: 2;
+  width: 250px;
+}
+
+#logo_outdoor_aboutMe {
+  -webkit-animation: rotateOutdoor infinite 30s linear;
+          animation: rotateOutdoor infinite 30s linear;
+  position: relative;
+  top: 32%;
+  left: 14%;
+  z-index: 2;
+  width: 150px;
+}
+
+#logo_indoor {
+  -webkit-animation: rotateOutdoor infinite 30s linear;
+          animation: rotateOutdoor infinite 30s linear;
+  position: absolute;
+  left: 14%;
+  z-index: 2;
+  top: 9%;
+  width: 252px;
+}
+
+#logo_indoor_aboutMe {
+  -webkit-animation: rotateOutdoor infinite 30s linear;
+          animation: rotateOutdoor infinite 30s linear;
+  position: absolute;
+  left: 14%;
+  z-index: 2;
+  top: 5%;
+  width: 157px;
+}
+
+#picture_background {
+  width: 90.5%;
+  margin-left: auto;
 }
 
 #bloc_header,
@@ -1336,4 +1358,6 @@ a {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
+
+/* -------- ABOUTME.HTML ----------- */
 /*# sourceMappingURL=style.css.map */

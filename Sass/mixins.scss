@@ -58,3 +58,35 @@
 		color: white;
 	}
 }
+
+@keyframes rotateIndoor {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@mixin logo_indoor {
+	animation: rotateOutdoor infinite 30s linear;
+	position: absolute;
+	left: 14%;
+	z-index: 2;
+}
+
+@mixin logo_outdoor {
+	animation: rotateOutdoor infinite 30s linear;
+	position: relative;
+	top: 32%;
+	left: 14%;
+	z-index: 2;
+}
+
+@keyframes rotateOutdoor {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}

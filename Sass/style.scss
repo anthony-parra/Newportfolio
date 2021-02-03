@@ -1,4 +1,6 @@
-@import "./Mixins/mixins.scss";
+@import "./mixins.scss";
+
+/* -------- REGLAGES GENERAUX ----------- */
 
 body {
     margin: 0;
@@ -9,21 +11,28 @@ a {
     text-decoration: none;
 }
 
+/* -------- INDEX.HTML ----------- */
+
+
 #logo_outdoor {
-	animation: rotateOutdoor infinite 30s linear;
-	position: relative;
-	top: 32%;
-	left: 14%;
-	z-index: 2;
+	@include logo_outdoor;
 	width: 250px;
+
+	&_aboutMe {
+		@include logo_outdoor;
+		width: 150px;
+	}
 }
 #logo_indoor {
-	animation: rotateIndoor infinite 30s linear;
-	position: absolute;
+	@include logo_indoor;
 	top: 9%;
-	left: 14%;
-	z-index: 2;
 	width: 252px;
+
+	&_aboutMe {
+		@include logo_indoor;
+		top: 5%;
+		width: 157px;
+	}
 }
 
 #picture_background {
@@ -31,22 +40,6 @@ a {
     margin-left: auto;
 }
 
-@keyframes rotateIndoor {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-@keyframes rotateOutdoor {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(-360deg);
-    }
-}
 #bloc_header,
 #bloc_header_logo {
 	display: flex;
@@ -711,3 +704,8 @@ font-family: 'Cormorant Garamond', serif;
 	animation-delay: 14.5s;
 	animation-fill-mode: forwards;
 }
+
+
+/* -------- ABOUTME.HTML ----------- */
+
+
