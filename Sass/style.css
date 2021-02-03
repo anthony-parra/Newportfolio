@@ -132,6 +132,62 @@
   }
 }
 
+@-webkit-keyframes first_bloc {
+  0% {
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    color: white;
+  }
+}
+
+@keyframes first_bloc {
+  0% {
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    color: white;
+  }
+}
+
+@-webkit-keyframes logo {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(-85px);
+            transform: translateX(-85px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateX(85px);
+            transform: translateX(85px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(-85px);
+            transform: translateX(-85px);
+  }
+}
+
+@keyframes logo {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(-85px);
+            transform: translateX(-85px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateX(85px);
+            transform: translateX(85px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(-85px);
+            transform: translateX(-85px);
+  }
+}
+
 /* -------- REGLAGES GENERAUX ----------- */
 body {
   margin: 0;
@@ -160,12 +216,13 @@ a {
   top: 32%;
   left: 14%;
   z-index: 2;
+  left: 14%;
   width: 150px;
 }
 
 #logo_indoor {
-  -webkit-animation: rotateOutdoor infinite 30s linear;
-          animation: rotateOutdoor infinite 30s linear;
+  -webkit-animation: rotateIndoor infinite 30s linear;
+          animation: rotateIndoor infinite 30s linear;
   position: absolute;
   left: 14%;
   z-index: 2;
@@ -174,11 +231,12 @@ a {
 }
 
 #logo_indoor_aboutMe {
-  -webkit-animation: rotateOutdoor infinite 30s linear;
-          animation: rotateOutdoor infinite 30s linear;
+  -webkit-animation: rotateIndoor infinite 30s linear;
+          animation: rotateIndoor infinite 30s linear;
   position: absolute;
   left: 14%;
   z-index: 2;
+  left: 14%;
   top: 5%;
   width: 157px;
 }
@@ -246,12 +304,12 @@ a {
 #title_homepage {
   position: relative;
   top: 35%;
-  left: 17%;
   color: white;
   text-align: center;
   z-index: 2;
   font-family: 'Cormorant Garamond', serif;
   font-size: 46px;
+  left: 17%;
 }
 
 #bloc_text {
@@ -1360,4 +1418,120 @@ a {
 }
 
 /* -------- ABOUTME.HTML ----------- */
+#title_aboutMe {
+  position: relative;
+  top: 35%;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 46px;
+  left: 16%;
+}
+
+#first_bloc {
+  -webkit-animation: first_bloc 1s linear;
+          animation: first_bloc 1s linear;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: relative;
+  z-index: 2;
+  color: transparent;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Lora", serif;
+  width: 57%;
+  top: 5px;
+  left: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.avatar_first_bloc {
+  width: 200px;
+  height: auto;
+  margin-left: 100px;
+  border-radius: 100px;
+  border: 1px solid white;
+  opacity: 0;
+  -webkit-animation: first_bloc 1s linear;
+          animation: first_bloc 1s linear;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#second_bloc {
+  -webkit-animation: first_bloc 1s linear;
+          animation: first_bloc 1s linear;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: relative;
+  z-index: 2;
+  color: transparent;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Lora", serif;
+  top: 15px;
+  left: 200px;
+  width: 35%;
+}
+
+#third_bloc {
+  -webkit-animation: first_bloc 1s linear;
+          animation: first_bloc 1s linear;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: relative;
+  z-index: 2;
+  color: transparent;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Lora", serif;
+  top: 100px;
+  left: 220px;
+  width: 30%;
+}
+
+#bloc_competences {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 90%;
+  margin-left: auto;
+  position: relative;
+  bottom: -190px;
+}
+
+.bloc_competence {
+  -webkit-animation: logo 10s infinite linear;
+          animation: logo 10s infinite linear;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+  width: 70px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 @import "./mixins.scss";
+@import "./variables.scss";
 
 /* -------- REGLAGES GENERAUX ----------- */
 
@@ -20,6 +21,7 @@ a {
 
 	&_aboutMe {
 		@include logo_outdoor;
+		left: 14%;
 		width: 150px;
 	}
 }
@@ -30,6 +32,7 @@ a {
 
 	&_aboutMe {
 		@include logo_indoor;
+		left: 14%;
 		top: 5%;
 		width: 157px;
 	}
@@ -79,15 +82,10 @@ font-weight: bold;
 	width: 100%;
 }
 #title_homepage {
-	position: relative;
-	top: 35%;
+	@include title;
 	left: 17%;
-	color: white;
-	text-align: center;
-	z-index: 2;
-font-family: 'Cormorant Garamond', serif;
-	font-size: 46px;
 }
+
 #bloc_text {
 	position: relative;
 	top: 32%;
@@ -705,7 +703,60 @@ font-family: 'Cormorant Garamond', serif;
 	animation-fill-mode: forwards;
 }
 
-
 /* -------- ABOUTME.HTML ----------- */
 
+#title_aboutMe {
+	@include title;
+	left: 16%;
+}
 
+#first_bloc {
+	@include animation_first_bloc_aboutMe;
+	@include property_bloc_aboutMe;
+	width: 57%;
+	top: 5px;
+	left: 40%;
+	display: flex;
+	align-items: center;
+}
+.underline {
+	text-decoration: underline;
+}
+
+.avatar_first_bloc {
+	width: 200px;
+	height: auto;
+	margin-left: 100px;
+	border-radius: 100px;
+	border: 1px solid $colorPrimary;
+	@include avatar;
+}
+
+#second_bloc {
+	@include animation_second_bloc_aboutMe;
+	@include property_bloc_aboutMe;
+	top: 15px;
+	left: 200px;
+	width: 35%;
+}
+
+#third_bloc {
+	@include animation_third_bloc_aboutMe;
+	@include property_bloc_aboutMe;
+	top: 100px;
+	left: 220px;
+	width: 30%;
+}
+
+#bloc_competences {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+    width: 90%;
+    margin-left: auto;
+    position: relative;
+	bottom: -190px;
+}
+.bloc_competence {
+	@include banniere_logo;
+}

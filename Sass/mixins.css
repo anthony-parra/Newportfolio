@@ -131,4 +131,60 @@
             transform: rotate(-360deg);
   }
 }
+
+@-webkit-keyframes first_bloc {
+  0% {
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    color: white;
+  }
+}
+
+@keyframes first_bloc {
+  0% {
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    color: white;
+  }
+}
+
+@-webkit-keyframes logo {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(-85px);
+            transform: translateX(-85px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateX(85px);
+            transform: translateX(85px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(-85px);
+            transform: translateX(-85px);
+  }
+}
+
+@keyframes logo {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(-85px);
+            transform: translateX(-85px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateX(85px);
+            transform: translateX(85px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(-85px);
+            transform: translateX(-85px);
+  }
+}
 /*# sourceMappingURL=mixins.css.map */
