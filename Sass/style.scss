@@ -714,7 +714,7 @@ font-weight: bold;
 	@include animation_first_bloc_aboutMe;
 	@include property_bloc_aboutMe;
 	width: 57%;
-	top: 5px;
+	top: -10px;
 	left: 40%;
 	display: flex;
 	align-items: center;
@@ -735,15 +735,15 @@ font-weight: bold;
 #second_bloc {
 	@include animation_second_bloc_aboutMe;
 	@include property_bloc_aboutMe;
-	top: 15px;
-	left: 200px;
+	top: -10px;
+	left: 190px;
 	width: 35%;
 }
 
 #third_bloc {
 	@include animation_third_bloc_aboutMe;
 	@include property_bloc_aboutMe;
-	top: 100px;
+	top: 30px;
 	left: 220px;
 	width: 30%;
 }
@@ -755,7 +755,7 @@ font-weight: bold;
     width: 90%;
     margin-left: auto;
     position: relative;
-	bottom: -190px;
+	bottom: -155px;
 }
 .bloc_competence {
 	@include banniere_logo;
