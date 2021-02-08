@@ -188,6 +188,52 @@
   }
 }
 
+@-webkit-keyframes first_projects {
+  0% {
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    color: black;
+  }
+}
+
+@keyframes first_projects {
+  0% {
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    color: black;
+  }
+}
+
+@-webkit-keyframes slideBottom {
+  0% {
+    opacity: 0.5;
+    position: relative;
+    right: -400px;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    right: 0px;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    opacity: 0.5;
+    position: relative;
+    right: -400px;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    right: 0px;
+  }
+}
+
 /* -------- REGLAGES GENERAUX ----------- */
 body {
   margin: 0;
@@ -203,17 +249,18 @@ a {
   -webkit-animation: rotateOutdoor infinite 30s linear;
           animation: rotateOutdoor infinite 30s linear;
   position: relative;
-  top: 32%;
+  top: 60%;
   left: 14%;
   z-index: 2;
   width: 250px;
+  top: 32%;
 }
 
 #logo_outdoor_aboutMe {
   -webkit-animation: rotateOutdoor infinite 30s linear;
           animation: rotateOutdoor infinite 30s linear;
   position: relative;
-  top: 32%;
+  top: 60%;
   left: 14%;
   z-index: 2;
   left: 14%;
@@ -237,7 +284,7 @@ a {
   left: 14%;
   z-index: 2;
   left: 14%;
-  top: 5%;
+  top: 10%;
   width: 157px;
 }
 
@@ -303,7 +350,7 @@ a {
 
 #title_homepage {
   position: relative;
-  top: 35%;
+  top: 60%;
   color: white;
   text-align: center;
   z-index: 2;
@@ -1420,13 +1467,14 @@ a {
 /* -------- ABOUTME.HTML ----------- */
 #title_aboutMe {
   position: relative;
-  top: 35%;
+  top: 60%;
   color: white;
   text-align: center;
   z-index: 2;
   font-family: 'Cormorant Garamond', serif;
   font-size: 46px;
   left: 16%;
+  text-decoration: underline;
 }
 
 #first_bloc {
@@ -1442,9 +1490,9 @@ a {
   font-size: 18px;
   text-align: center;
   font-family: "Lora", serif;
-  width: 57%;
-  top: -10px;
-  left: 40%;
+  width: 75%;
+  top: -110px;
+  left: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1457,10 +1505,22 @@ a {
   text-decoration: underline;
 }
 
+.bloc_text_aboutMe {
+  width: 55%;
+}
+
+#bloc_image_aboutMe {
+  position: relative;
+  z-index: 2;
+  margin-left: auto;
+  top: -25%;
+  right: 10%;
+}
+
 .avatar_first_bloc {
-  width: 200px;
+  width: 145px;
   height: auto;
-  margin-left: 100px;
+  margin-left: auto;
   border-radius: 100px;
   border: 1px solid white;
   opacity: 0;
@@ -1485,7 +1545,7 @@ a {
   font-size: 18px;
   text-align: center;
   font-family: "Lora", serif;
-  top: -10px;
+  top: -100px;
   left: 190px;
   width: 35%;
 }
@@ -1503,8 +1563,8 @@ a {
   font-size: 18px;
   text-align: center;
   font-family: "Lora", serif;
-  top: 30px;
-  left: 220px;
+  top: -70px;
+  left: 195px;
   width: 30%;
 }
 
@@ -1521,7 +1581,7 @@ a {
   width: 90%;
   margin-left: auto;
   position: relative;
-  bottom: -155px;
+  bottom: 0px;
 }
 
 .bloc_competence {
@@ -1533,5 +1593,102 @@ a {
   position: relative;
   z-index: 2;
   width: 55px;
+}
+
+/* -------- PROJECTS.HTML ----------- */
+#title_projects {
+  position: relative;
+  top: 60%;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 46px;
+  left: 16%;
+  color: black;
+  text-decoration: underline;
+}
+
+#bloc_projects {
+  -webkit-animation: first_projects 1s linear;
+          animation: first_projects 1s linear;
+  color: transparent;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: relative;
+  z-index: 2;
+  color: black;
+  top: 150px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.link_projects {
+  -webkit-animation: first_projects 1s linear;
+          animation: first_projects 1s linear;
+  color: transparent;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  color: black;
+  text-decoration: underline;
+}
+
+#all_bloc_projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: black;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 90%;
+  margin-left: auto;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+#first_bloc_projects {
+  z-index: 2;
+  position: relative;
+  top: 170px;
+  -webkit-animation: slideBottom 1s ease;
+          animation: slideBottom 1s ease;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#second_bloc_projects {
+  z-index: 2;
+  position: relative;
+  top: 170px;
+  -webkit-animation: slideBottom 1s ease;
+          animation: slideBottom 1s ease;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#third_bloc_projects {
+  z-index: 2;
+  position: relative;
+  top: 170px;
+  -webkit-animation: slideBottom 1s ease;
+          animation: slideBottom 1s ease;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 /*# sourceMappingURL=style.css.map */

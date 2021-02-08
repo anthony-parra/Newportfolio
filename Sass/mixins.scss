@@ -71,7 +71,7 @@
 @mixin logo_outdoor {
 	animation: rotateOutdoor infinite 30s linear;
 	position: relative;
-	top: 32%;
+	top: 60%;
 	left: 14%;
 	z-index: 2;
 }
@@ -96,7 +96,7 @@
 
 @mixin title {
 	position: relative;
-	top: 35%;
+	top: 60%;
 	color: $colorPrimary;
 	text-align: center;
 	z-index: 2;
@@ -165,5 +165,53 @@
 	}  100% {
 		opacity: 1;
 		transform: translateX(-85px);
+	}
+}
+
+@mixin animation_bloc_projects {
+	animation: first_projects 1s linear;
+    color: transparent;
+	animation-fill-mode: forwards;
+}
+
+@keyframes first_projects {
+	0% {
+		color: transparent;
+	} 100% {
+		opacity: 1;
+		color: $colorSecondary;
+	}
+}
+
+@mixin first_bloc_projects {
+	animation: slideBottom 1s ease;
+	animation-delay: 1.5s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+@mixin second_bloc_projects {
+	animation: slideBottom 1s ease;
+	animation-delay: 2s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+@mixin third_bloc_projects {
+	animation: slideBottom 1s ease;
+	animation-delay: 2.5s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slideBottom {
+	0% {
+		opacity: 0.5;
+		position: relative;
+		right: -400px;
+	} 100% {
+		opacity: 1;
+		position: relative;
+		right: 0px;
 	}
 }

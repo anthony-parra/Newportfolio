@@ -18,6 +18,7 @@ a {
 #logo_outdoor {
 	@include logo_outdoor;
 	width: 250px;
+	top: 32%;
 
 	&_aboutMe {
 		@include logo_outdoor;
@@ -33,7 +34,7 @@ a {
 	&_aboutMe {
 		@include logo_indoor;
 		left: 14%;
-		top: 5%;
+		top: 10%;
 		width: 157px;
 	}
 }
@@ -708,25 +709,37 @@ font-weight: bold;
 #title_aboutMe {
 	@include title;
 	left: 16%;
+	text-decoration: underline;
 }
 
 #first_bloc {
 	@include animation_first_bloc_aboutMe;
 	@include property_bloc_aboutMe;
-	width: 57%;
-	top: -10px;
-	left: 40%;
+	width: 75%;
+	top: -110px;
+	left: 20%;
 	display: flex;
 	align-items: center;
 }
 .underline {
 	text-decoration: underline;
 }
+.bloc_text_aboutMe {
+	width: 55%;
+}
+
+#bloc_image_aboutMe {
+	position: relative;
+    z-index: 2;
+    margin-left: auto;
+    top: -25%;
+    right: 10%;
+}
 
 .avatar_first_bloc {
-	width: 200px;
+	width: 145px;
 	height: auto;
-	margin-left: 100px;
+	margin-left: auto;
 	border-radius: 100px;
 	border: 1px solid $colorPrimary;
 	@include avatar;
@@ -735,7 +748,7 @@ font-weight: bold;
 #second_bloc {
 	@include animation_second_bloc_aboutMe;
 	@include property_bloc_aboutMe;
-	top: -10px;
+	top: -100px;
 	left: 190px;
 	width: 35%;
 }
@@ -743,8 +756,8 @@ font-weight: bold;
 #third_bloc {
 	@include animation_third_bloc_aboutMe;
 	@include property_bloc_aboutMe;
-	top: 30px;
-	left: 220px;
+	top: -70px;
+	left: 195px;
 	width: 30%;
 }
 
@@ -755,8 +768,70 @@ font-weight: bold;
     width: 90%;
     margin-left: auto;
     position: relative;
-	bottom: -155px;
+	bottom: 0px;
 }
 .bloc_competence {
 	@include banniere_logo;
+}
+
+/* -------- PROJECTS.HTML ----------- */
+
+#title_projects {
+	@include title;
+	left: 16%;
+	color: black;
+	text-decoration: underline;
+}
+
+#bloc_projects {
+	@include animation_bloc_projects;
+	position: relative;
+	z-index: 2;
+	color: black;
+	top: 150px;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+	text-align: center;
+}
+
+.link_projects {
+	@include animation_bloc_projects;
+	color: black;
+	text-decoration: underline;
+}
+
+#all_bloc_projects {
+	display: flex;
+	text-align: center;
+	color: black;
+	justify-content: space-evenly;
+	width: 90%;
+	margin-left: auto;
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+#first_bloc_projects {
+	z-index: 2;
+	position: relative;
+	top: 170px;
+	@include first_bloc_projects;
+}
+
+#second_bloc_projects {
+	z-index: 2;
+	position: relative;
+	top: 170px;
+	@include second_bloc_projects;
+}
+
+#third_bloc_projects {
+	z-index: 2;
+	position: relative;
+	top: 170px;
+	@include third_bloc_projects;
 }

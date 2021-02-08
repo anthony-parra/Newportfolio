@@ -187,4 +187,50 @@
             transform: translateX(-85px);
   }
 }
+
+@-webkit-keyframes first_projects {
+  0% {
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    color: black;
+  }
+}
+
+@keyframes first_projects {
+  0% {
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    color: black;
+  }
+}
+
+@-webkit-keyframes slideBottom {
+  0% {
+    opacity: 0.5;
+    position: relative;
+    right: -400px;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    right: 0px;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    opacity: 0.5;
+    position: relative;
+    right: -400px;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    right: 0px;
+  }
+}
 /*# sourceMappingURL=mixins.css.map */
