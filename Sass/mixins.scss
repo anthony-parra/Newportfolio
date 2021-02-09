@@ -29,7 +29,7 @@
 @keyframes second {
 	0% {
 		position: relative;
-		left: -1400px;
+		left: -500px;
 	} 100% {
 		position: relative;
 		left: 0px;
@@ -40,7 +40,7 @@
 @keyframes third {
 	0% {
 		position: relative;
-		right: -1400px;
+		right: -500px;
 	} 100% {
 		position: relative;
 		right: 0px;
@@ -184,34 +184,56 @@
 }
 
 @mixin first_bloc_projects {
-	animation: slideBottom 1s ease;
+	animation: slideLeftProjects 1s ease;
 	animation-delay: 1.5s;
 	opacity: 0;
 	animation-fill-mode: forwards;
 }
 
 @mixin second_bloc_projects {
-	animation: slideBottom 1s ease;
+	animation: slideTopProjects 1s ease;
 	animation-delay: 2s;
 	opacity: 0;
 	animation-fill-mode: forwards;
 }
 
 @mixin third_bloc_projects {
-	animation: slideBottom 1s ease;
+	animation: slideRightProjects 1s ease;
 	animation-delay: 2.5s;
 	opacity: 0;
 	animation-fill-mode: forwards;
 }
 
-@keyframes slideBottom {
+@keyframes slideLeftProjects {
 	0% {
 		opacity: 0.5;
 		position: relative;
-		right: -400px;
+		left: -500px;
+	} 100% {
+		opacity: 1;
+		position: relative;
+		left: 0px;
+	}
+}
+@keyframes slideRightProjects {
+	0% {
+		opacity: 0.5;
+		position: relative;
+		right: -100px;
 	} 100% {
 		opacity: 1;
 		position: relative;
 		right: 0px;
+	}
+}
+@keyframes slideTopProjects {
+	0% {
+		opacity: 0.5;
+		position: relative;
+		top: -400px;
+	} 100% {
+		opacity: 1;
+		position: relative;
+		top: 170px;
 	}
 }

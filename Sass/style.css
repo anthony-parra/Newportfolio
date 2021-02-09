@@ -25,7 +25,7 @@
 @-webkit-keyframes second {
   0% {
     position: relative;
-    left: -1400px;
+    left: -500px;
   }
   100% {
     position: relative;
@@ -37,7 +37,7 @@
 @keyframes second {
   0% {
     position: relative;
-    left: -1400px;
+    left: -500px;
   }
   100% {
     position: relative;
@@ -49,7 +49,7 @@
 @-webkit-keyframes third {
   0% {
     position: relative;
-    right: -1400px;
+    right: -500px;
   }
   100% {
     position: relative;
@@ -61,7 +61,7 @@
 @keyframes third {
   0% {
     position: relative;
-    right: -1400px;
+    right: -500px;
   }
   100% {
     position: relative;
@@ -208,11 +208,37 @@
   }
 }
 
-@-webkit-keyframes slideBottom {
+@-webkit-keyframes slideLeftProjects {
   0% {
     opacity: 0.5;
     position: relative;
-    right: -400px;
+    left: -500px;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    left: 0px;
+  }
+}
+
+@keyframes slideLeftProjects {
+  0% {
+    opacity: 0.5;
+    position: relative;
+    left: -500px;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    left: 0px;
+  }
+}
+
+@-webkit-keyframes slideRightProjects {
+  0% {
+    opacity: 0.5;
+    position: relative;
+    right: -100px;
   }
   100% {
     opacity: 1;
@@ -221,16 +247,42 @@
   }
 }
 
-@keyframes slideBottom {
+@keyframes slideRightProjects {
   0% {
     opacity: 0.5;
     position: relative;
-    right: -400px;
+    right: -100px;
   }
   100% {
     opacity: 1;
     position: relative;
     right: 0px;
+  }
+}
+
+@-webkit-keyframes slideTopProjects {
+  0% {
+    opacity: 0.5;
+    position: relative;
+    top: -400px;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    top: 170px;
+  }
+}
+
+@keyframes slideTopProjects {
+  0% {
+    opacity: 0.5;
+    position: relative;
+    top: -400px;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    top: 170px;
   }
 }
 
@@ -242,6 +294,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+h2 {
+  color: black;
 }
 
 /* -------- INDEX.HTML ----------- */
@@ -1657,8 +1713,8 @@ h2 {
   z-index: 2;
   position: relative;
   top: 170px;
-  -webkit-animation: slideBottom 1s ease;
-          animation: slideBottom 1s ease;
+  -webkit-animation: slideLeftProjects 1s ease;
+          animation: slideLeftProjects 1s ease;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
   opacity: 0;
@@ -1670,8 +1726,8 @@ h2 {
   z-index: 2;
   position: relative;
   top: 170px;
-  -webkit-animation: slideBottom 1s ease;
-          animation: slideBottom 1s ease;
+  -webkit-animation: slideTopProjects 1s ease;
+          animation: slideTopProjects 1s ease;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
   opacity: 0;
@@ -1683,8 +1739,8 @@ h2 {
   z-index: 2;
   position: relative;
   top: 170px;
-  -webkit-animation: slideBottom 1s ease;
-          animation: slideBottom 1s ease;
+  -webkit-animation: slideRightProjects 1s ease;
+          animation: slideRightProjects 1s ease;
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
   opacity: 0;
