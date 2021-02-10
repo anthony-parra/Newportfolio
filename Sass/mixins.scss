@@ -239,20 +239,26 @@
 }
 
 @mixin animationButton {
-	animation: button 2s linear infinite;
+	animation: button 6s ease-out infinite;
 	animation-delay: 2s;
 }
 
 @keyframes button {
 	0% {
-		top: 80px;
-	} 25% {
-		top: 77px;
-	} 50% {
-		top: 80px;
-	} 75% {
-		top: 77px;
+		top: 100px;
+	} 33% {
+		top: 75px;
+	} 66% {
+		top: 125px;
 	} 100% {
-		top: 80px;
+		top: 100px;
 	}
 }
+
+/*25% {
+	top: 77px;
+} 50% {
+	top: 80px;
+} 75% {
+	top: 77px;
+}*/

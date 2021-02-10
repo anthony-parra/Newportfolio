@@ -288,40 +288,41 @@
 
 @-webkit-keyframes button {
   0% {
-    top: 80px;
+    top: 100px;
   }
-  25% {
-    top: 77px;
+  33% {
+    top: 75px;
   }
-  50% {
-    top: 80px;
-  }
-  75% {
-    top: 77px;
+  66% {
+    top: 125px;
   }
   100% {
-    top: 80px;
+    top: 100px;
   }
 }
 
 @keyframes button {
   0% {
-    top: 80px;
+    top: 100px;
   }
-  25% {
-    top: 77px;
+  33% {
+    top: 75px;
   }
-  50% {
-    top: 80px;
-  }
-  75% {
-    top: 77px;
+  66% {
+    top: 125px;
   }
   100% {
-    top: 80px;
+    top: 100px;
   }
 }
 
+/*25% {
+	top: 77px;
+} 50% {
+	top: 80px;
+} 75% {
+	top: 77px;
+}*/
 /* -------- REGLAGES GENERAUX ----------- */
 body {
   margin: 0;
@@ -1793,29 +1794,14 @@ h2 {
   z-index: 2;
   font-family: 'Cormorant Garamond', serif;
   font-size: 46px;
+  color: black;
   left: 16%;
-}
-
-#bloc_text_contact {
-  position: relative;
-  z-index: 2;
-  color: white;
-  font-size: 20px;
-  top: -75px;
-  margin-left: auto;
-  text-align: center;
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
-  width: 50%;
-  padding-bottom: 25px;
-  -webkit-box-shadow: 2px 2px 2px white;
-          box-shadow: 2px 2px 2px white;
-  right: 75px;
+  text-decoration: underline;
 }
 
 button {
-  -webkit-animation: button 2s linear infinite;
-          animation: button 2s linear infinite;
+  -webkit-animation: button 6s ease-out infinite;
+          animation: button 6s ease-out infinite;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
   position: relative;
@@ -1823,8 +1809,8 @@ button {
   font-size: 20px;
   text-align: center;
   width: 20%;
-  left: 44%;
-  top: 75px;
+  left: 72%;
+  top: 100px;
   border-radius: 15px;
   padding: 3px 0px;
 }
@@ -1836,8 +1822,15 @@ button {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 90%;
-  margin-left: auto;
+  width: 29%;
+  margin-right: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 175px;
+  position: relative;
+  top: 150px;
 }
 
 #bloc_phone,
@@ -1848,26 +1841,31 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
+  color: black;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 2px solid white;
-  border-right: 2px solid white;
   padding: 0px 20px 20px 0px;
+  margin: 20px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #bloc_text_phone,
 #bloc_text_email,
 #bloc_text_local {
-  color: white;
+  color: black;
   margin-left: 30px;
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .color_title_contact {
-  color: white;
+  color: black;
 }
 
 .icone_contact {
