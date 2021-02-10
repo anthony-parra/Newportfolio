@@ -321,4 +321,28 @@
     top: 120px;
   }
 }
+
+@-webkit-keyframes bloc_contact {
+  0% {
+    opacity: 0;
+    margin-left: -400px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 175px;
+    z-index: 2;
+  }
+}
+
+@keyframes bloc_contact {
+  0% {
+    opacity: 0;
+    margin-left: -400px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 175px;
+    z-index: 2;
+  }
+}
 /*# sourceMappingURL=mixins.css.map */

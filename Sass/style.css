@@ -322,6 +322,30 @@
   }
 }
 
+@-webkit-keyframes bloc_contact {
+  0% {
+    opacity: 0;
+    margin-left: -400px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 175px;
+    z-index: 2;
+  }
+}
+
+@keyframes bloc_contact {
+  0% {
+    opacity: 0;
+    margin-left: -400px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 175px;
+    z-index: 2;
+  }
+}
+
 /* -------- REGLAGES GENERAUX ----------- */
 body {
   margin: 0;
@@ -473,6 +497,23 @@ h2 {
 }
 
 /*---- ANIMATION---- */
+#home,
+#aboutMe,
+#projects,
+#contact {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#home:hover,
+#aboutMe:hover,
+#projects:hover,
+#contact:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  text-shadow: 2px 2px 12px white;
+}
+
 #first_text_title {
   -webkit-animation: first 1s cubic-bezier(0.46, 1.29, 0.83, 1);
           animation: first 1s cubic-bezier(0.46, 1.29, 0.83, 1);
@@ -1673,7 +1714,7 @@ h2 {
   width: 90%;
   margin-left: auto;
   position: relative;
-  bottom: 0px;
+  bottom: -50px;
 }
 
 .bloc_competence {
@@ -1812,9 +1853,30 @@ button {
   top: 120px;
   border-radius: 15px;
   padding: 3px 0px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #1c2b32;
+  -webkit-box-shadow: 2px 2px 12px white;
+          box-shadow: 2px 2px 12px white;
+}
+
+#button {
+  color: black;
+}
+
+#button:hover {
+  color: white;
 }
 
 #bloc_phone_email_local {
+  -webkit-animation: bloc_contact 1s ease-out;
+          animation: bloc_contact 1s ease-out;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

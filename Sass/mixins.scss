@@ -256,3 +256,20 @@
 		top: 120px;
 	}
 }
+
+@mixin animation_contact {
+	animation: bloc_contact 1s ease-out;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+@keyframes bloc_contact {
+	0% {
+		opacity: 0;
+		margin-left: -400px;
+	} 100% {
+		opacity: 1;
+		margin-left: 175px;
+		z-index: 2;
+	}
+}

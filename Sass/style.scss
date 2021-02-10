@@ -110,6 +110,17 @@ width: 100%;
 }
 /*---- ANIMATION---- */
 
+#home,
+#aboutMe,
+#projects,
+#contact {
+	transform: scale(1);
+	&:hover {
+		transform: scale(1.10);
+		text-shadow: 2px 2px 12px white;
+	}
+}
+
 #first_text_title {
 	@include title_text_first;
 	animation-delay: 1s;
@@ -772,7 +783,7 @@ width: 100%;
     width: 90%;
     margin-left: auto;
     position: relative;
-	bottom: 0px;
+	bottom: -50px;
 }
 .bloc_competence {
 	@include banniere_logo;
@@ -860,9 +871,22 @@ button {
 	top: 120px;
 	border-radius: 15px;
 	padding: 3px 0px;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: bold;
+	&:hover {
+		background-color: #1c2b32;
+		box-shadow: 2px 2px 12px $colorPrimary;
+	}
+}
+#button {
+	color: $colorSecondary;
+	&:hover {
+		color: $colorPrimary;
+	}
 }
 
 #bloc_phone_email_local {
+	@include animation_contact;
 	display: flex;
 	justify-content: space-evenly;
 	width: 29%;
