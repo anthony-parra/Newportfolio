@@ -237,3 +237,22 @@
 		top: 170px;
 	}
 }
+
+@mixin animationButton {
+	animation: button 2s linear infinite;
+	animation-delay: 2s;
+}
+
+@keyframes button {
+	0% {
+		top: 80px;
+	} 25% {
+		top: 77px;
+	} 50% {
+		top: 80px;
+	} 75% {
+		top: 77px;
+	} 100% {
+		top: 80px;
+	}
+}

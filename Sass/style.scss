@@ -6,6 +6,7 @@
 body {
     margin: 0;
     width: 100%;
+	height: 100%;
 }
 
 a {
@@ -44,7 +45,7 @@ h2 {
 }
 
 #picture_background {
-    width: 90.5%;
+    width: 90%;
     margin-left: auto;
 }
 
@@ -64,22 +65,21 @@ border-right: 2px solid white;
 text-align: center;
 background-color: #1c2b32;
 font-family: 'Lora', serif;
-position: relative;
-z-index: 2;
+width: 100%;
 }
 
 #bloc_menu {
 	position: absolute;
 	display: flex;
 	min-height: 100%;
+	width: 10%;
 }
 .menu_inside {
 	color: white;
-border-bottom: 2px solid white;
-padding-bottom: 20px;
+	border-bottom: 2px solid white;
+	padding-bottom: 20px;
 	font-size: 16px;
-font-weight: bold;
-	
+	font-weight: bold;
 }
 #bloc_logo_title {
 	display: flex;
@@ -106,7 +106,7 @@ font-weight: bold;
 	position: absolute;
 	z-index: 2;
 	display: flex;
-	max-height: 890px
+	//max-height: 890px
 }
 /*---- ANIMATION---- */
 
@@ -838,4 +838,78 @@ h2 {
 	position: relative;
 	top: 170px;
 	@include third_bloc_projects;
+}
+
+/* -------- CONTACT.HTML ----------- */
+
+#title_contact {
+	@include title;
+	left: 16%;
+}
+
+#bloc_text_contact {
+	position: relative;
+	z-index: 2;
+	color: white;
+	font-size: 20px;
+	top: -75px;
+	margin-left: auto;
+	text-align: center;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	width: 50%;
+	padding-bottom: 25px;
+	box-shadow: 2px 2px 2px white;
+	right: 75px;
+}
+
+button {
+	@include animationButton;
+	position: relative;
+	z-index: 2;
+	font-size: 20px;
+	text-align: center;
+	width: 20%;
+	left: 44%;
+	top: 75px;
+	border-radius: 15px;
+	padding: 3px 0px;
+}
+
+#bloc_phone_email_local {
+	display: flex;
+	justify-content: space-evenly;
+	width: 90%;
+	margin-left: auto;
+}
+
+#bloc_phone,
+#bloc_email,
+#bloc_local {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	color: white;
+	align-items: center;
+	border-bottom: 2px solid white;
+	border-right: 2px solid white;
+	padding: 0px 20px 20px 0px;
+}
+
+#bloc_text_phone,
+#bloc_text_email,
+#bloc_text_local {
+	color: white;
+	margin-left: 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.color_title_contact {
+	color: $colorPrimary;
+}
+
+.icone_contact {
+	font-size: 4em;
+	padding-left: 10px;
 }
