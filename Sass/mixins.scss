@@ -245,20 +245,14 @@
 
 @keyframes button {
 	0% {
-		top: 100px;
-	} 33% {
-		top: 75px;
-	} 66% {
-		top: 125px;
+		top: 120px;
+	} 25% {
+		top: 95px;
+	} 50% {
+		top: 120px;
+	} 75% {
+		top: 145px;
 	} 100% {
-		top: 100px;
+		top: 120px;
 	}
 }
-
-/*25% {
-	top: 77px;
-} 50% {
-	top: 80px;
-} 75% {
-	top: 77px;
-}*/

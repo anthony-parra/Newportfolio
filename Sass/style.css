@@ -288,41 +288,40 @@
 
 @-webkit-keyframes button {
   0% {
-    top: 100px;
+    top: 120px;
   }
-  33% {
-    top: 75px;
+  25% {
+    top: 95px;
   }
-  66% {
-    top: 125px;
+  50% {
+    top: 120px;
+  }
+  75% {
+    top: 145px;
   }
   100% {
-    top: 100px;
+    top: 120px;
   }
 }
 
 @keyframes button {
   0% {
-    top: 100px;
+    top: 120px;
   }
-  33% {
-    top: 75px;
+  25% {
+    top: 95px;
   }
-  66% {
-    top: 125px;
+  50% {
+    top: 120px;
+  }
+  75% {
+    top: 145px;
   }
   100% {
-    top: 100px;
+    top: 120px;
   }
 }
 
-/*25% {
-	top: 77px;
-} 50% {
-	top: 80px;
-} 75% {
-	top: 77px;
-}*/
 /* -------- REGLAGES GENERAUX ----------- */
 body {
   margin: 0;
@@ -1810,7 +1809,7 @@ button {
   text-align: center;
   width: 20%;
   left: 72%;
-  top: 100px;
+  top: 120px;
   border-radius: 15px;
   padding: 3px 0px;
 }
