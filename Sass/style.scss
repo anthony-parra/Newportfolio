@@ -118,8 +118,12 @@ width: 100%;
 	&:hover {
 		transform: scale(1.10);
 		text-shadow: 2px 2px 12px white;
+		#picture_background {
+			@include fadeIn;
+		}	
 	}
 }
+
 
 #first_text_title {
 	@include title_text_first;

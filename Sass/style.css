@@ -346,6 +346,24 @@
   }
 }
 
+@-webkit-keyframes fadein {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 /* -------- REGLAGES GENERAUX ----------- */
 body {
   margin: 0;
@@ -512,6 +530,14 @@ h2 {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   text-shadow: 2px 2px 12px white;
+}
+
+#home:hover #picture_background,
+#aboutMe:hover #picture_background,
+#projects:hover #picture_background,
+#contact:hover #picture_background {
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
 }
 
 #first_text_title {

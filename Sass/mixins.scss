@@ -273,3 +273,15 @@
 		z-index: 2;
 	}
 }
+
+@mixin fadeIn {
+	animation: fadein 2s;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 1;
+	} to {
+		opacity: 0;
+	}
+}
