@@ -241,6 +241,9 @@
 @mixin animationButton {
 	animation: button 6s ease-out infinite;
 	animation-delay: 2s;
+	&:hover {
+		animation-play-state: paused;
+	}
 }
 
 @keyframes button {
@@ -271,17 +274,5 @@
 		opacity: 1;
 		margin-left: 175px;
 		z-index: 2;
-	}
-}
-
-@mixin fadeIn {
-	animation: fadein 2s;
-}
-
-@keyframes fadein {
-	from {
-		opacity: 1;
-	} to {
-		opacity: 0;
 	}
 }
