@@ -1,17 +1,13 @@
-/*const home = document.getElementById("home");
+const home = document.getElementById("home");
 const aboutMe = document.getElementById("aboutMe");
 const projects = document.getElementById("projects");
 const contact = document.getElementById("contact");
+const blocImage = document.getElementById("bloc_image");
 
-contact.addEventListener('click', ()=>{
-    alert('HELLO');
-})
-home.addEventListener('click', ()=>{
-    alert('HELLO');
-})
-aboutMe.addEventListener('click', ()=>{
-    alert('HELLO');
-})
-projects.addEventListener('click', ()=>{
-    alert('HELLO');
-})*/
+function click() {
+    home.addEventListener("click", () => {
+        blocImage.innerHTML = `<img id="spinner" src="Image/icon-loader!.png" alt="Image d'un spinner qui tourne entre chaque page" />`;
+    })
+}
+
+click;

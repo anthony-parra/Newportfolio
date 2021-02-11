@@ -170,8 +170,10 @@
 
 @mixin animation_bloc_projects {
 	animation: first_projects 1s linear;
+	animation-delay: 1.5s;
     color: transparent;
 	animation-fill-mode: forwards;
+	opacity: 0;
 }
 
 @keyframes first_projects {
@@ -261,7 +263,8 @@
 }
 
 @mixin animation_contact {
-	animation: bloc_contact 1s ease-out;
+	animation: bloc_contact 1.5s ease-out;
+	animation-delay: 1s;
 	opacity: 0;
 	animation-fill-mode: forwards;
 }
@@ -274,5 +277,32 @@
 		opacity: 1;
 		margin-left: 175px;
 		z-index: 2;
+	}
+}
+
+
+@mixin spinner {
+	animation: spinner_red 2.5s ease-out;
+	opacity: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes spinner_red {
+	from {
+		transform: rotate(0deg);
+	} to {
+		transform: rotate(360deg);
+		opacity: 0;
+	}
+}
+
+@mixin blocHeader {
+	animation: opacityBloc 3s ease-out;
+}
+
+@keyframes opacityBloc {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 1;
 	}
 }

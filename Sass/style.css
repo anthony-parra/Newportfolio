@@ -346,6 +346,48 @@
   }
 }
 
+@-webkit-keyframes spinner_red {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes spinner_red {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes opacityBloc {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityBloc {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* -------- REGLAGES GENERAUX ----------- */
 body {
   margin: 0;
@@ -405,12 +447,33 @@ h2 {
   width: 157px;
 }
 
+#spinner {
+  width: 10%;
+  height: auto;
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: spinner_red 2.5s ease-out;
+          animation: spinner_red 2.5s ease-out;
+  opacity: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 #picture_background {
   width: 90%;
   margin-left: auto;
+  -webkit-animation: opacityBloc 3s ease-out;
+          animation: opacityBloc 3s ease-out;
 }
 
-#bloc_header,
+#bloc_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #bloc_header_logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1745,9 +1808,12 @@ h2 {
 #bloc_projects {
   -webkit-animation: first_projects 1s linear;
           animation: first_projects 1s linear;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
   color: transparent;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  opacity: 0;
   position: relative;
   z-index: 2;
   color: black;
@@ -1762,9 +1828,12 @@ h2 {
 .link_projects {
   -webkit-animation: first_projects 1s linear;
           animation: first_projects 1s linear;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
   color: transparent;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  opacity: 0;
   color: black;
   text-decoration: underline;
 }
@@ -1877,8 +1946,10 @@ button:hover #button {
 }
 
 #bloc_phone_email_local {
-  -webkit-animation: bloc_contact 1s ease-out;
-          animation: bloc_contact 1s ease-out;
+  -webkit-animation: bloc_contact 1.5s ease-out;
+          animation: bloc_contact 1.5s ease-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
