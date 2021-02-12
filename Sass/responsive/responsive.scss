@@ -49,5 +49,12 @@
     #bloc_text {
         font-size: 1.6em;
     }
-
+    #picture_background {
+        display: none;
+    }
+    #picture_background_responsive {
+        display: inherit;
+        width: 100%;
+        height: auto;
+    }
 }

@@ -412,6 +412,10 @@ h2 {
   color: black;
 }
 
+#picture_background_responsive {
+  display: none;
+}
+
 /* -------- INDEX.HTML ----------- */
 #logo_outdoor {
   -webkit-animation: rotateOutdoor infinite 30s linear;
