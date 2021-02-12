@@ -109,18 +109,20 @@ width: 100%;
 	position: relative;
 	top: 32%;
 	left: 12%;
-	font-size: 24px;
+	font-size: 30px;
 	text-align: center;
 	color: transparent;
 	z-index: 2;
-	font-family: 'Lora', serif;
+	font-family: $policeSecondary;
+	font-weight: bold;
 	width: 40%;
 }
 #bloc_image {
-	position: absolute;
+	position: fixed;
 	z-index: 2;
 	display: flex;
 	max-height: 100%;
+	min-height: 100%;
 }
 /*---- ANIMATION---- */
 
@@ -739,14 +741,15 @@ width: 100%;
 	@include title;
 	left: 16%;
 	text-decoration: underline;
+	color: $colorSecondary;
 }
 
 #first_bloc {
 	@include animation_first_bloc_aboutMe;
 	@include property_bloc_aboutMe;
 	width: 75%;
-	top: -110px;
-	left: 20%;
+	top: -40px;
+	left: 13%;
 	display: flex;
 	align-items: center;
 }
@@ -755,14 +758,16 @@ width: 100%;
 }
 .bloc_text_aboutMe {
 	width: 55%;
+	font-size: 21px;
 }
 
 #bloc_image_aboutMe {
 	position: relative;
-    z-index: 2;
-    margin-left: auto;
-    top: -25%;
-    right: 10%;
+	z-index: 2;
+	margin-left: auto;
+	display: flex;
+	margin-right: auto;
+	top: -75px;
 }
 
 .avatar_first_bloc {
@@ -770,15 +775,15 @@ width: 100%;
 	height: auto;
 	margin-left: auto;
 	border-radius: 100px;
-	border: 1px solid $colorPrimary;
+	border: 1px solid $colorSecondary;
 	@include avatar;
 }
 
 #second_bloc {
 	@include animation_second_bloc_aboutMe;
 	@include property_bloc_aboutMe;
-	top: -100px;
-	left: 190px;
+	top: -0px;
+	left: 15%;
 	width: 35%;
 }
 
@@ -786,7 +791,7 @@ width: 100%;
 	@include animation_third_bloc_aboutMe;
 	@include property_bloc_aboutMe;
 	top: -70px;
-	left: 195px;
+	left: 18%;
 	width: 30%;
 }
 
@@ -821,8 +826,10 @@ width: 100%;
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 20px;
+	font-size: 21px;
 	text-align: center;
+	font-weight: bold;
+	font-family: $policeSecondary;
 }
 
 .link_projects {
@@ -842,6 +849,7 @@ width: 100%;
 
 h2 {
 	text-decoration: underline;
+	font-family: $policePrimary;
 }
 
 #first_bloc_projects {
@@ -849,6 +857,11 @@ h2 {
 	position: relative;
 	top: 170px;
 	@include first_bloc_projects;
+	transform: scale(1);
+	transition-duration: 0.8s;
+	&:hover {
+		transform: scale(1.15);
+	}
 }
 
 #second_bloc_projects {
@@ -856,6 +869,11 @@ h2 {
 	position: relative;
 	top: 170px;
 	@include second_bloc_projects;
+	transform: scale(1);
+	transition-duration: 0.8s;
+	&:hover {
+		transform: scale(1.15);
+	}
 }
 
 #third_bloc_projects {
@@ -863,6 +881,11 @@ h2 {
 	position: relative;
 	top: 170px;
 	@include third_bloc_projects;
+	transform: scale(1);
+	transition-duration: 0.8s;
+	&:hover {
+		transform: scale(1.15);
+	}
 }
 
 /* -------- CONTACT.HTML ----------- */

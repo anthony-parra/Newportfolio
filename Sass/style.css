@@ -138,7 +138,7 @@
   }
   100% {
     opacity: 1;
-    color: white;
+    color: black;
   }
 }
 
@@ -148,7 +148,7 @@
   }
   100% {
     opacity: 1;
-    color: white;
+    color: black;
   }
 }
 
@@ -534,7 +534,8 @@ h2 {
   color: white;
   text-align: center;
   z-index: 2;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
   font-size: 46px;
   left: 17%;
 }
@@ -543,21 +544,23 @@ h2 {
   position: relative;
   top: 32%;
   left: 12%;
-  font-size: 24px;
+  font-size: 30px;
   text-align: center;
   color: transparent;
   z-index: 2;
-  font-family: 'Lora', serif;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
   width: 40%;
 }
 
 #bloc_image {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-height: 100%;
+  min-height: 100%;
 }
 
 /*---- ANIMATION---- */
@@ -1668,10 +1671,12 @@ h2 {
   color: white;
   text-align: center;
   z-index: 2;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
   font-size: 46px;
   left: 16%;
   text-decoration: underline;
+  color: black;
 }
 
 #first_bloc {
@@ -1684,12 +1689,12 @@ h2 {
   position: relative;
   z-index: 2;
   color: transparent;
-  font-size: 18px;
+  font-size: 21px;
   text-align: center;
-  font-family: "Lora", serif;
+  font-family: "Cormorant Garamond", serif;
   width: 75%;
-  top: -110px;
-  left: 20%;
+  top: -40px;
+  left: 13%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1704,14 +1709,18 @@ h2 {
 
 .bloc_text_aboutMe {
   width: 55%;
+  font-size: 21px;
 }
 
 #bloc_image_aboutMe {
   position: relative;
   z-index: 2;
   margin-left: auto;
-  top: -25%;
-  right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  top: -75px;
 }
 
 .avatar_first_bloc {
@@ -1719,7 +1728,7 @@ h2 {
   height: auto;
   margin-left: auto;
   border-radius: 100px;
-  border: 1px solid white;
+  border: 1px solid black;
   opacity: 0;
   -webkit-animation: first_bloc 1s linear;
           animation: first_bloc 1s linear;
@@ -1739,11 +1748,11 @@ h2 {
   position: relative;
   z-index: 2;
   color: transparent;
-  font-size: 18px;
+  font-size: 21px;
   text-align: center;
-  font-family: "Lora", serif;
-  top: -100px;
-  left: 190px;
+  font-family: "Cormorant Garamond", serif;
+  top: -0px;
+  left: 15%;
   width: 35%;
 }
 
@@ -1757,11 +1766,11 @@ h2 {
   position: relative;
   z-index: 2;
   color: transparent;
-  font-size: 18px;
+  font-size: 21px;
   text-align: center;
-  font-family: "Lora", serif;
+  font-family: "Cormorant Garamond", serif;
   top: -70px;
-  left: 195px;
+  left: 18%;
   width: 30%;
 }
 
@@ -1799,7 +1808,8 @@ h2 {
   color: white;
   text-align: center;
   z-index: 2;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
   font-size: 46px;
   left: 16%;
   color: black;
@@ -1822,8 +1832,10 @@ h2 {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 20px;
+  font-size: 21px;
   text-align: center;
+  font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .link_projects {
@@ -1854,6 +1866,7 @@ h2 {
 
 h2 {
   text-decoration: underline;
+  font-family: "Lora", serif;
 }
 
 #first_bloc_projects {
@@ -1867,6 +1880,15 @@ h2 {
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+#first_bloc_projects:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 #second_bloc_projects {
@@ -1880,6 +1902,15 @@ h2 {
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+#second_bloc_projects:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 #third_bloc_projects {
@@ -1893,6 +1924,15 @@ h2 {
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+#third_bloc_projects:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 /* -------- CONTACT.HTML ----------- */
@@ -1902,7 +1942,8 @@ h2 {
   color: white;
   text-align: center;
   z-index: 2;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
   font-size: 46px;
   color: black;
   left: 16%;
