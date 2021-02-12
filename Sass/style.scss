@@ -120,7 +120,7 @@ width: 100%;
 	position: absolute;
 	z-index: 2;
 	display: flex;
-	//max-height: 890px
+	max-height: 100%;
 }
 /*---- ANIMATION---- */
 
@@ -795,9 +795,9 @@ width: 100%;
 	align-items: center;
 	justify-content: space-evenly;
     width: 90%;
-    margin-left: auto;
-    position: relative;
-	bottom: -50px;
+    margin-left: 10%;
+    position: absolute;
+	bottom: 0px;
 }
 .bloc_competence {
 	@include banniere_logo;

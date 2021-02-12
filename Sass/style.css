@@ -557,6 +557,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-height: 100%;
 }
 
 /*---- ANIMATION---- */
@@ -1775,9 +1776,9 @@ h2 {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 90%;
-  margin-left: auto;
-  position: relative;
-  bottom: -50px;
+  margin-left: 10%;
+  position: absolute;
+  bottom: 0px;
 }
 
 .bloc_competence {
