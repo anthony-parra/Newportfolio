@@ -1,4 +1,23 @@
+@import "../mixins.scss";
+
 /*---------------------------------------- INDEX.HTML --------------------------------------*/
+
+@media screen and (min-width: 1151px){
+    #first_text_title {
+        @include title_text_first;
+        animation-delay: 1s;
+    }
+    
+    #second_text_title {
+        @include title_text_second;
+        animation-delay: 1.5s;
+    }
+    
+    #third_text_title {
+        @include title_text_third;
+        animation-delay: 2s;
+    }
+}
 
 @media screen and (max-width: 1150px){
     #bloc_menu {
@@ -31,7 +50,19 @@
     }
     #title_homepage {
         width: 50%;
-    }   
+    }
+    #first_text_title {
+        @include title_homepage;
+        animation-delay: 1s;
+    }
+    #second_text_title {
+        @include title_homepage;
+        animation-delay: 1.5s;
+    }
+    #third_text_title {
+        @include title_homepage;;
+        animation-delay: 2s;
+    }
 }
 @media screen and (max-width: 990px){
     #logo_outdoor,
@@ -39,6 +70,7 @@
         display: none;
     }
     #title_homepage {
+        animation: none;
         margin-left: auto;
         margin-right: auto;
         width: 100%;

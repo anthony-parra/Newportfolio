@@ -319,3 +319,16 @@
 		opacity: 1;
 	}
 }
+
+@mixin title_homepage {
+    animation: titleHomePage 1s ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes titleHomePage {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}

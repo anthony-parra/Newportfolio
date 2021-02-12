@@ -397,6 +397,24 @@
   }
 }
 
+@-webkit-keyframes titleHomePage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes titleHomePage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* -------- REGLAGES GENERAUX ----------- */
 body {
   margin: 0;
@@ -592,36 +610,6 @@ h2 {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   text-shadow: 2px 2px 12px white;
-}
-
-#first_text_title {
-  -webkit-animation: first 1s cubic-bezier(0.46, 1.29, 0.83, 1);
-          animation: first 1s cubic-bezier(0.46, 1.29, 0.83, 1);
-  color: transparent;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-#second_text_title {
-  -webkit-animation: second 1s cubic-bezier(0.46, 1.29, 0.83, 1);
-          animation: second 1s cubic-bezier(0.46, 1.29, 0.83, 1);
-  color: transparent;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-
-#third_text_title {
-  -webkit-animation: third 1s cubic-bezier(0.46, 1.29, 0.83, 1);
-          animation: third 1s cubic-bezier(0.46, 1.29, 0.83, 1);
-  color: transparent;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
 }
 
 #letter1 {

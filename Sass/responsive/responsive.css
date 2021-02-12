@@ -1,4 +1,451 @@
+@-webkit-keyframes first {
+  0% {
+    position: relative;
+    top: -400px;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+    color: white;
+  }
+}
+
+@keyframes first {
+  0% {
+    position: relative;
+    top: -400px;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+    color: white;
+  }
+}
+
+@-webkit-keyframes second {
+  0% {
+    position: relative;
+    left: -500px;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+    color: white;
+  }
+}
+
+@keyframes second {
+  0% {
+    position: relative;
+    left: -500px;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+    color: white;
+  }
+}
+
+@-webkit-keyframes third {
+  0% {
+    position: relative;
+    right: -500px;
+  }
+  100% {
+    position: relative;
+    right: 0px;
+    color: white;
+  }
+}
+
+@keyframes third {
+  0% {
+    position: relative;
+    right: -500px;
+  }
+  100% {
+    position: relative;
+    right: 0px;
+    color: white;
+  }
+}
+
+@-webkit-keyframes color {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes color {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: white;
+  }
+}
+
+/*@mixin logo_outdoor_width {
+	animation: rotateWidth 2s ease-out;
+	width: 0px;
+}*/
+@-webkit-keyframes rotateIndoor {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotateIndoor {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/*@keyframes rotateWidth {
+	from {
+		width: 0px;
+	} to {
+		width: 250px;
+	}
+}*/
+@-webkit-keyframes rotateOutdoor {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@keyframes rotateOutdoor {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes first_bloc {
+  0% {
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    color: black;
+  }
+}
+
+@keyframes first_bloc {
+  0% {
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    color: black;
+  }
+}
+
+@-webkit-keyframes logo {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(-85px);
+            transform: translateX(-85px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateX(85px);
+            transform: translateX(85px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(-85px);
+            transform: translateX(-85px);
+  }
+}
+
+@keyframes logo {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(-85px);
+            transform: translateX(-85px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateX(85px);
+            transform: translateX(85px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(-85px);
+            transform: translateX(-85px);
+  }
+}
+
+@-webkit-keyframes first_projects {
+  0% {
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    color: black;
+  }
+}
+
+@keyframes first_projects {
+  0% {
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    color: black;
+  }
+}
+
+@-webkit-keyframes slideLeftProjects {
+  0% {
+    opacity: 0.5;
+    position: relative;
+    left: -500px;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    left: 0px;
+  }
+}
+
+@keyframes slideLeftProjects {
+  0% {
+    opacity: 0.5;
+    position: relative;
+    left: -500px;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    left: 0px;
+  }
+}
+
+@-webkit-keyframes slideRightProjects {
+  0% {
+    opacity: 0.5;
+    position: relative;
+    right: -100px;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    right: 0px;
+  }
+}
+
+@keyframes slideRightProjects {
+  0% {
+    opacity: 0.5;
+    position: relative;
+    right: -100px;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    right: 0px;
+  }
+}
+
+@-webkit-keyframes slideTopProjects {
+  0% {
+    opacity: 0.5;
+    position: relative;
+    top: -400px;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    top: 170px;
+  }
+}
+
+@keyframes slideTopProjects {
+  0% {
+    opacity: 0.5;
+    position: relative;
+    top: -400px;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    top: 170px;
+  }
+}
+
+@-webkit-keyframes button {
+  0% {
+    top: 120px;
+  }
+  25% {
+    top: 95px;
+  }
+  50% {
+    top: 120px;
+  }
+  75% {
+    top: 145px;
+  }
+  100% {
+    top: 120px;
+  }
+}
+
+@keyframes button {
+  0% {
+    top: 120px;
+  }
+  25% {
+    top: 95px;
+  }
+  50% {
+    top: 120px;
+  }
+  75% {
+    top: 145px;
+  }
+  100% {
+    top: 120px;
+  }
+}
+
+@-webkit-keyframes bloc_contact {
+  0% {
+    opacity: 0;
+    margin-left: -400px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 175px;
+    z-index: 2;
+  }
+}
+
+@keyframes bloc_contact {
+  0% {
+    opacity: 0;
+    margin-left: -400px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 175px;
+    z-index: 2;
+  }
+}
+
+@-webkit-keyframes spinner_red {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes spinner_red {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes opacityBloc {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityBloc {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes titleHomePage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes titleHomePage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /*---------------------------------------- INDEX.HTML --------------------------------------*/
+@media screen and (min-width: 1151px) {
+  #first_text_title {
+    -webkit-animation: first 1s cubic-bezier(0.46, 1.29, 0.83, 1);
+            animation: first 1s cubic-bezier(0.46, 1.29, 0.83, 1);
+    color: transparent;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  #second_text_title {
+    -webkit-animation: second 1s cubic-bezier(0.46, 1.29, 0.83, 1);
+            animation: second 1s cubic-bezier(0.46, 1.29, 0.83, 1);
+    color: transparent;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+  }
+  #third_text_title {
+    -webkit-animation: third 1s cubic-bezier(0.46, 1.29, 0.83, 1);
+            animation: third 1s cubic-bezier(0.46, 1.29, 0.83, 1);
+    color: transparent;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+}
+
 @media screen and (max-width: 1150px) {
   #bloc_menu {
     position: absolute;
@@ -35,6 +482,33 @@
   #title_homepage {
     width: 50%;
   }
+  #first_text_title {
+    -webkit-animation: titleHomePage 1s ease-out;
+            animation: titleHomePage 1s ease-out;
+    opacity: 0;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  #second_text_title {
+    -webkit-animation: titleHomePage 1s ease-out;
+            animation: titleHomePage 1s ease-out;
+    opacity: 0;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+  }
+  #third_text_title {
+    -webkit-animation: titleHomePage 1s ease-out;
+            animation: titleHomePage 1s ease-out;
+    opacity: 0;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -43,6 +517,8 @@
     display: none;
   }
   #title_homepage {
+    -webkit-animation: none;
+            animation: none;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
