@@ -76,6 +76,11 @@
 	z-index: 2;
 }
 
+/*@mixin logo_outdoor_width {
+	animation: rotateWidth 2s ease-out;
+	width: 0px;
+}*/
+
 @keyframes rotateIndoor {
     from {
         transform: rotate(0deg);
@@ -85,6 +90,13 @@
     }
 }
 
+/*@keyframes rotateWidth {
+	from {
+		width: 0px;
+	} to {
+		width: 250px;
+	}
+}*/
 @keyframes rotateOutdoor {
     from {
         transform: rotate(0deg);

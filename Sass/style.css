@@ -88,6 +88,10 @@
   }
 }
 
+/*@mixin logo_outdoor_width {
+	animation: rotateWidth 2s ease-out;
+	width: 0px;
+}*/
 @-webkit-keyframes rotateIndoor {
   from {
     -webkit-transform: rotate(0deg);
@@ -98,7 +102,6 @@
             transform: rotate(360deg);
   }
 }
-
 @keyframes rotateIndoor {
   from {
     -webkit-transform: rotate(0deg);
@@ -110,6 +113,13 @@
   }
 }
 
+/*@keyframes rotateWidth {
+	from {
+		width: 0px;
+	} to {
+		width: 250px;
+	}
+}*/
 @-webkit-keyframes rotateOutdoor {
   from {
     -webkit-transform: rotate(0deg);
@@ -120,7 +130,6 @@
             transform: rotate(-360deg);
   }
 }
-
 @keyframes rotateOutdoor {
   from {
     -webkit-transform: rotate(0deg);
